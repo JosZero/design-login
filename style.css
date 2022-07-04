@@ -1,0 +1,145 @@
+body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: blueviolet;
+}
+* {
+      box-sizing: border-box;
+}
+.form-container {
+      background-color: rgb(255, 255, 255);
+      width: 1000px;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 70%;
+      display: flex;
+      align-items: center;
+
+}
+
+.login-container {
+      /*background-color: antiquewhite;*/
+      width: 400px;
+      margin: 0 auto;
+}
+.form-container .login-container > h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      
+}
+.form-container .login-container > p,
+.form-container .login-container > span {
+      text-align: center;
+      color: #555;
+}
+.form-container .login-container label {
+      display: block;
+      font-weight: bold;
+      padding: 5px 0;
+
+}
+.form-container .login-container input.input {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      border: solid 1px #ccc;
+      border-radius: 5px;
+}
+.form-container .login-container input.input:focus {
+      outline: solid 2px #0099ff;
+}
+.form-container .login-container .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.form-container a {
+      color: #0099ff;
+      text-decoration: none;
+}
+.form-container a:hover {
+      color: #0763a1;
+      text-decoration: underline;
+}
+.btn {
+      border: none;
+      padding: 15px 20px;
+      width: calc(100% - 40px) ;
+      display: block;
+      font-weight: bolder;
+      border-radius: 20px;
+      margin: 0 auto;
+      text-transform: uppercase;
+      cursor: pointer;
+}
+.btn.btn-login:hover {
+      background-color: rgb(116, 103, 103);
+}
+.btn.btn-facebook:hover {
+      background-color: rgb(25, 46, 139);
+}
+.btn.btn-google:hover {
+      background-color: rgb(248, 233, 233);
+}
+.btn.btn-tweeter:hover {
+      background-color: rgb(116, 103, 103);
+}
+.btn.btn-login {
+      background-color: #555;
+      color: white;
+}
+.btn.btn-google {
+      color: black;
+      background-color: white;
+      border: 1px solid #CCC;
+}
+.btn.btn-facebook {
+      background-color: #0099ff;
+      color: white;
+      border: 1px solid #CCC;
+}
+.btn.btn-tweeter {
+      background-color: rgb(77, 82, 151);
+      color: white;
+      border: 1px solid #CCC;
+}
+.form-container .login-container .providers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      margin-top: 30px;
+}
+.form-container .welcome-screen-container {
+      background-color: black;
+      height: 100%;
+      width: 400px;
+      border-radius: 10px ;
+}
+@media screen and (max-width: 1357px){
+      .form-container {
+            width: 95%;
+      }
+      .form-container .login-container {
+            width: 400px;
+      }
+      .form-container .welcome-screen-container {
+            width: 40%;
+      }
+}
+@media screen and (max-width: 900px){
+      .form-container .login-container {
+            width: 350px;
+            
+      }
+      .form-container {
+            height: 50%;
+      }
+      .form-container .welcome-screen-container {
+            display: none;
+      }
+}
